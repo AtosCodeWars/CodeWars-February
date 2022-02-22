@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>ATOS Code Wars</title>
+        <link rel='stylesheet' href='../../css/main.css'>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/CodeWar.css">            
+    </head>
+    <body>
+        <header>
+            <h1><a href='../../index.html'>ATOS Code Wars</a></h1>
+            <h3 style="margin-bottom: 0px;">February 25, 2022</h3>
+        </header>
+        <nav>
+            <a style="padding-left: 200px;" href='../../index.html'>Home</a>
+            <a href='../challenge.html' class="live">Challenges</a>
+            <!-- <a href='../teams.html' >Teams</a> -->
+            <a href='../result.html'>Result</a>
+            <a href='../previous.html'>Previous Code Wars</a>
+        </nav>
+        <section class="py-5 text-center container">
+            <h2>Pop Culture Movie Challenge</h2>
+                <p>Welcome to the Pop Culture Movie Challenge. Below, you will find a set of emojis that describe a movie. Your task is to guess the movie title and type it in the input below the image(Please use all lowercase letters when entering the movie titles and don't use any numbers or punctuation marks).
+                     
+                    If the answer is correct, you will be redirected to the next movie, if it's incorrect an alert will appear letting you know. Good Luck!
+                </p>
+            <!-- challenge html code  -->
+            <div>
+                
+                <img style="height: 400px; width: 800px;" src="../../img/MovieChallenge/movie2.png" >
+                <br />
+                <!-- <input style="width: 500px;"> -->
+                <form enctype="multipart/form-data" id="myForm" method="post"
+                    action="https://hu9zc1g0o3.execute-api.us-east-1.amazonaws.com/moviechallenge">
+                    <p>Movie 2:     <input type="text" id="key" name="key" style="width:300px" /></p>
+                    <input type="hidden" id="number" name="number" value="1">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+                
+        </section>
+        <footer>
+            <p class="mb-1">Atos ® - Cloud Enterprise Solutions</p>
+            <p class="mb-1">Cross Cloud Functional Services - CodeWars</p>
+        </footer>
+        <script src="../js/main.js" type="text/javascript"></script>
+    </body>
+</html>
