@@ -10,7 +10,7 @@
   <body>
     <header>
       <h1><a href="../../index.html">ATOS Code Wars</a></h1>
-      <h3 style="margin-bottom: 0px">December 3, 2021</h3>
+      <h3 style="margin-bottom: 0px">February 25, 2022</h3>
     </header>
     <nav>
       <a style="padding-left: 200px" href="../../index.html">Home</a>
@@ -20,9 +20,29 @@
       <a href="../previous.html">Previous Code Wars</a>
     </nav>
     <section class="py-5 text-center container">
-      <h1 style="text-align: center">Metadata Challenge</h1>
-      <p style="text-align: center">&nbsp;</p>
+      <h2>Metadata Challenge</h2>
+      <p>Welcome to the Metadata Challenge. Below, you will find a image that has some hidden messages in it. Your task is to 
+        find the message and write it down on the input below (please use all lowercase letters when entering the phrase).
+        There are two hints you will need to find. 
+      </p>
+      <p>
+        1. There are some hidden messages inside the colored boxes of the image. You will need to play with 
+        the contrast of the image. We recommend you use this website to modify the image: https://www5.lunapic.com/editor/
+      </p>
+      <p>
+        2. You will need look at the metadata of the image to find out which is the correct text you need to enter in the input below.
+      </p>
+      <br />
       <image src="../../img/CodeWarsMetadata.jpeg" style="width:400px"/>
+      <div style="display: flex;
+      justify-content: center; padding-top: 50px;">
+        <form enctype="multipart/form-data" id="myForm" method="post"
+          action="https://us-central1-al1x-cat-development-6841.cloudfunctions.net/cipher">
+          <input type="hidden" id="number" name="number" value="0">
+          <input type="text" id="key" name="key">
+          <input type="submit" value="Submit">
+        </form>
+      </div>
       </section>
     <footer>
       <p class="mb-1">Atos ® - Cloud Enterprise Solutions</p>
