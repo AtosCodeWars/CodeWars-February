@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ATOS Code Wars</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/CodeWar.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="../../index.html">ATOS Code Wars</a></h1>
+      <h3 style="margin-bottom: 0px">February 25, 2022</h3>
+    </header>
+    <nav>
+      <a style="padding-left: 200px" href="../../index.html">Home</a>
+      <a href="../challenge.html" class="live">Challenges</a>
+      <!-- <a href="../teams.html">Teams</a> -->
+      <a href="../result.html">Result</a>
+      <a href="../previous.html">Previous Code Wars</a>
+    </nav>
+    <section class="py-5 text-center container">
+      <h2>HTML Challenge</h2>
+      <p>Welcome to the HTML Challenge. Below, you will find a counter and two buttons. The buttons will either increaste or decrease the counter value.
+        Inside this page, there is a hidden number (hint: there is a # sign before the number). Your task is to find the number and enter it into the Counter.
+        If the value is correct, you will be redirected to the next step of the challenge
+      </p>
+      
+        <div class="album py-2">
+            <!-- <div class="containerCounter" style="background-color: red; width:200px"> -->
+            <div class="containerCounter">
+            <h1 id="counterTitle">Counter</h1>
+            <div id="number">0</div>
+            <button id="increment" style="padding:20px; width: 150px; color: black; background-color: red;">+</button>
+            <button id="decrement" style="padding:20px; width: 150px; color: black; background-color: blue;">-</button>
+            <br />
+            <button id="decrement" style="padding:20px; width: 150px; color: black;">Submit</button>
+            <!-- <form enctype="multipart/form-data" id="myForm" method="post"
+                action="https://us-central1-al1x-cat-development-6841.cloudfunctions.net/htmlChallenge">
+                <input type="hidden" name="number" value="0">
+                <input type="hidden" id="key" name="key">
+                <input type="submit" value="Submit" style="margin-left: 190px; margin-top: 20px; width:100px">
+            </form> -->
+        </div>
+        <br />
+        <div style="display: none;">Wrong Div </div>
+        <br />
+        <div style="display: none;">This one is also not correct </div>
+        <br />
+        <div style="display: none;">Hint: Look at the borders</div>
+        <br />
+      </div>
+
+      </section>
+    <footer>
+      <p class="mb-1">Atos ® - #22 - Cloud Enterprise Solutions</p>
+      <p class="mb-1">Cross Cloud Functional Services - CodeWars</p>
+    </footer>
+    <script src="../js/main.js" type="text/javascript"></script>
+  </body>
+</html>
+
+<script>
+    let add = document.getElementById('increment');
+    let subtract = document.getElementById('decrement');
+    let submit = document.getElementById('submit')
+   
+    let int = document.getElementById('number');
+    let integer = 0;
+
+    add.addEventListener('click', function(){
+      integer += 1;
+      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
+    })
+
+    subtract.addEventListener('click', function(){
+      integer -= 1;
+      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
+    })
+
+
+  </script>
