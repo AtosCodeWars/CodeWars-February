@@ -34,8 +34,14 @@
             <button id="increment" style="padding:20px; width: 150px; color: black; background-color: red;">+</button>
             <button id="decrement" style="padding:20px; width: 150px; color: black; background-color: blue;">-</button>
             <br />
-            <button id="decrement" style="padding:20px; width: 150px; color: black;">Submit</button>
-            <!-- <form enctype="multipart/form-data" id="myForm" method="post"
+            <form enctype="multipart/form-data" id="myForm" method="post"
+              action="https://hu9zc1g0o3.execute-api.us-east-1.amazonaws.com/htmlchallenge">
+              <input type="hidden" name="number" value="0">
+              <input type="hidden" id="key" name="key">
+              <button id="submit" style="padding:20px; width: 150px; color: black;">Submit</button>
+            </form>
+           <!--  
+            <form enctype="multipart/form-data" id="myForm" method="post"
                 action="https://us-central1-al1x-cat-development-6841.cloudfunctions.net/htmlChallenge">
                 <input type="hidden" name="number" value="0">
                 <input type="hidden" id="key" name="key">
